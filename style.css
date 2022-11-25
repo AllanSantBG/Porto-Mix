@@ -1,6 +1,12 @@
 /* GOOGLE FONTS: POPPINS & OSWALD */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+:root{
+    --primaryColor: #ffffff;
+    --secundaryColor: #333333;
+    --tertiaryColor: #341d78;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -49,20 +55,20 @@ html, body{
     top: 0;
     width: 100%;
     height: 100vh;
-    background: #311ca2;
+    background: var(--tertiaryColor);
     background: linear-gradient(90deg, #311ca280 30%, #83001c80 100%);
 }
-.details{
-    color: #eee;
+#home .container .outer .details{
+    color: var(--primaryColor);
     text-align: center;
     margin-top: 15%;
 }
-.details p{
+#home .container .outer .details p{
     font-size: 1.25rem;
     font-weight: 200;
     padding: 15px 0;
 }
-.details h1{
+#home .container .outer .details h1{
     font-size: 5rem;
     word-spacing: 10px;
     margin: 0 20px;
@@ -70,29 +76,29 @@ html, body{
     font-family: "Oswald", sans-serif;
     transform: scale(1, 1.5);
 }
-.details a .fa-solid{
-    color: #eee;
+#home .container .outer .details a .fa-solid{
+    color: var(--primaryColor);
     font-size: 40px;
     margin-top: 10%;
     opacity: 0.75;
     transition: ease-in-out 0.25s;
     scroll-behavior: smooth;
 }
-.details a .fa-solid:hover{
+#home .container .outer .details a .fa-solid:hover{
     opacity: 1;
 }
 @media only screen and (max-width: 920px){
-    .details{
+    #home .container .outer .details{
         margin-top: 50%;
     }
-    .details p{
+    #home .container .outer .details p{
         font-size: 175%;  
     }
-    .details h1{
+    #home .container .outer .details h1{
         display: block;
         font-size: 325%;
     }
-    .details a .fa-solid{
+    #home .container .outer .details a .fa-solid{
         margin-top: 35%;
     }
 }
@@ -100,34 +106,69 @@ html, body{
 /* SOBRE */
 #about{
     display: block;
-    background: #eee;
+    background: var(--primaryColor);
     width: 100%;
-    height: 100vh;
+    height: 75vh;
+    color: var(--tertiaryColor);
 }
-h2{
+#about .container h2{
+    margin: 25px 0;
     overflow: hidden;
     text-align: center;
-    color: #505050;
-    font-size: 3rem;
+    font-size: 2rem;
+    word-spacing: 5px;
 }
-  
-h2:before,
-h2:after {
-    background: #505050;
+#about .container h2:before,
+#about .container h2:after {
+    background: var(--tertiaryColor);
     content: "";
     display: inline-block;
     height: 2px;
     position: relative;
     vertical-align: middle;
-    width: 44%;
+    width: 38%;
 }
-  
-h2:before {
+#about .container h2:before {
     right: 0.5em;
     margin-left: -50%;
 }
-  
-h2:after {
+#about .container h2:after {
     left: 0.5em;
     margin-right: -50%;
+}
+#about .container .outer{
+    margin: 50px 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0;
+    text-align: justify;
+}
+#about .container .outer p{
+    width: 87.5%;
+    font-size: 2rem;
+    border-left: 5px solid var(--tertiaryColor);
+    padding-left: 20px;
+}
+#about .container .outer iframe{
+    margin-left: auto;
+    width: 87.5%;
+    height: 90%;
+    border-left: 15px solid var(--tertiaryColor);
+}
+@media only screen and (max-width: 920px){
+    #about .container .outer{
+        display: block;
+        text-align: justify;
+    }
+    #about .container .outer p{
+        font-size: 1.25rem;
+        margin: 50px auto;
+        border: none;
+    }
+    #about .container .outer iframe{
+        margin: auto;
+        width: 100%;
+        height: 35vh;
+        border-left: 15px solid var(--tertiaryColor);
+    }
 }
