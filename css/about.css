@@ -1,8 +1,7 @@
 #about{
-    display: block;
     background: var(--primaryColor);
     width: 100%;
-    height: 100vh;
+    height: auto;
     color: var(--tertiaryColor);
 }
 #about .container .outer{
@@ -44,31 +43,23 @@
     font-size: 175%;
     text-align: justify;
     display: block;
-    margin: 3% auto;
+    margin: 50px auto;
 }
 #about .container .outer video{
     width: 50%;
-    height: 50%;
     display: block;
-    margin: auto;
+    margin: 50px auto;
 }
 @media only screen and (max-width: 640px){
     #about .container .outer h2{
-        font-size: 125%;
-    }
-    #about .container .outer{
-        margin: auto;
-        display: block;
+        font-size: 150%;
     }
     #about .container .outer p{
         padding: initial;
-        font-size: 100%;
-        margin: 50px auto;
-        border: none;
+        font-size: 125%;
     }
     #about .container .outer video{
         width: 100%;
-        border: none;
         margin: auto;
     }
 }
