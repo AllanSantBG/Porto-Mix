@@ -16,16 +16,16 @@
 }
 @keyframes image-slider{
     0%,100%{
-        background-image: url("/images/cantando1.webp");
+        background-image: url("/Porto-mix/images/cantando1.webp");
     }
     25%{
-        background-image: url("/images/cantando2.webp");
+        background-image: url("/Porto-mix/images/cantando2.webp");
     }
     50%{
-        background-image: url("/images/cantando3.webp");
+        background-image: url("/Porto-mix/images/cantando3.webp");
     }
     75%{
-        background-image: url("/images/cantando4.webp");
+        background-image: url("/Porto-mix/images/cantando4.webp");
     }
 }
 #home .container .outer{
